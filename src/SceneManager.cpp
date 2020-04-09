@@ -6,15 +6,17 @@
 
 SceneManager::SceneManager() {
     this->currentGameState = sMainMenu;
+
+    this->menuScene = new Menu();
 }
 
 SceneManager::~SceneManager() {
 }
 
-void SceneManager::Update() {
+void SceneManager::Update(double delta) {
     switch (this->currentGameState) {
         case sMainMenu:
-            // update menu scene
+            this->menuScene->Update(delta);
             break;
         case sGameLoading:
             // update loading scene
@@ -29,7 +31,7 @@ void SceneManager::Update() {
 void SceneManager::Draw(SDL_Renderer *rR) {
     switch (this->currentGameState) {
         case sMainMenu:
-            // draw menu scene
+            this->menuScene->Draw(rR);
             break;
         case sGameLoading:
             // draw loading scene

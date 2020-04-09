@@ -33,8 +33,10 @@ public:
 
     bool quitGame;
 
+    double getDelta();
+
     void mainLoop();
-    void Update();
+    void Update(double delta);
     void Draw();
 
     int mouseX, mouseY = 0;

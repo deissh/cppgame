@@ -26,6 +26,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/JetBrains/CLion 2019.3.5/bin/cmake/win/share/cmake-3.15/Modules/Compiler/MSVC-CXX.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.5/bin/cmake/win/share/cmake-3.15/Modules/FindPackageHandleStandardArgs.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.5/bin/cmake/win/share/cmake-3.15/Modules/FindPackageMessage.cmake"
+  "C:/Program Files/JetBrains/CLion 2019.3.5/bin/cmake/win/share/cmake-3.15/Modules/FindSDL_ttf.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.5/bin/cmake/win/share/cmake-3.15/Modules/FindThreads.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.5/bin/cmake/win/share/cmake-3.15/Modules/Platform/Windows-MSVC-C.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.5/bin/cmake/win/share/cmake-3.15/Modules/Platform/Windows-MSVC-CXX.cmake"

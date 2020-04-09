@@ -232,6 +232,33 @@ src\SceneManager.cpp.s:
 	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\SceneManager.cpp.s
 .PHONY : src\SceneManager.cpp.s
 
+src\Scenes\Menu.obj: src\Scenes\Menu.cpp.obj
+
+.PHONY : src\Scenes\Menu.obj
+
+# target to build an object file
+src\Scenes\Menu.cpp.obj:
+	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj
+.PHONY : src\Scenes\Menu.cpp.obj
+
+src\Scenes\Menu.i: src\Scenes\Menu.cpp.i
+
+.PHONY : src\Scenes\Menu.i
+
+# target to preprocess a source file
+src\Scenes\Menu.cpp.i:
+	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.i
+.PHONY : src\Scenes\Menu.cpp.i
+
+src\Scenes\Menu.s: src\Scenes\Menu.cpp.s
+
+.PHONY : src\Scenes\Menu.s
+
+# target to generate assembly for a file
+src\Scenes\Menu.cpp.s:
+	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.s
+.PHONY : src\Scenes\Menu.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -253,6 +280,9 @@ help:
 	@echo ... src/SceneManager.obj
 	@echo ... src/SceneManager.i
 	@echo ... src/SceneManager.s
+	@echo ... src/Scenes/Menu.obj
+	@echo ... src/Scenes/Menu.i
+	@echo ... src/Scenes/Menu.s
 .PHONY : help
 
 

@@ -6,8 +6,12 @@
 #define CPPGAME_SCENEMANAGER_H
 
 #include "SDL.h"
+#include "Scenes/Menu.h"
 
 class SceneManager {
+private:
+    Menu * menuScene;
+
 public:
     SceneManager();
     ~SceneManager();
@@ -21,7 +25,7 @@ public:
 
     gameState currentGameState;
 
-    void Update();
+    void Update(double delta);
     void Draw(SDL_Renderer* rR);
 
     void setBackgroundColor(SDL_Renderer* rR);

@@ -51,7 +51,7 @@ void Core::mainLoop() {
 
         SDL_RenderFillRect(rR, NULL);
 
-        Update();
+        Update(this->getDelta());
         Draw();
 
         SDL_SetWindowTitle(this->window, (GAME_TITLE + " | fps: " + std::to_string(iNumOfFPS)).data());
@@ -70,10 +70,19 @@ void Core::mainLoop() {
     }
 }
 
-void Core::Update() {
-    Global::getSM()->Update();
+void Core::Update(double delta) {
+    Global::getSM()->Update(delta);
 }
 
 void Core::Draw() {
     Global::getSM()->Draw(rR);
+}
+
+auto NOW = (double) SDL_GetPerformanceCounter();
+auto LAST = 0;
+
+double Core::getDelta() {
+    LAST = NOW;
+    NOW = SDL_GetPerformanceCounter();
+    return (double)((NOW - LAST)*1000 / (double)SDL_GetPerformanceFrequency() );
 }

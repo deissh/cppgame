@@ -213,6 +213,12 @@ SDL2_INCLUDE_DIR:PATH=C:/Work/cppgame/cmake-build-debug/../include
 //Where the SDL Library can be found
 SDL2_LIBRARY:STRING=C:/Work/cppgame/cmake-build-debug/../lib/x86/SDL2.lib
 
+//Path to a file.
+SDL_TTF_INCLUDE_DIR:PATH=SDL_TTF_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+SDL_TTF_LIBRARY:FILEPATH=SDL_TTF_LIBRARY-NOTFOUND
+
 //Value Computed by CMake
 cppgame_BINARY_DIR:STATIC=C:/Work/cppgame/cmake-build-debug
 
@@ -366,4 +372,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_SDL:INTERNAL=[C:/Work/cppgame/cmake-build-debug/../
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Path to a library.
 SDL2_LIBRARY_TEMP:INTERNAL=C:/Work/cppgame/cmake-build-debug/../lib/x86/SDL2.lib
+//ADVANCED property for variable: SDL_TTF_INCLUDE_DIR
+SDL_TTF_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: SDL_TTF_LIBRARY
+SDL_TTF_LIBRARY-ADVANCED:INTERNAL=1
 

@@ -596,6 +596,14 @@ begin_code.h
 close_code.h
 ../include/close_code.h
 
+../include/SDL_ttf.h
+SDL.h
+../include/SDL.h
+begin_code.h
+../include/begin_code.h
+close_code.h
+../include/close_code.h
+
 ../include/SDL_version.h
 SDL_stdinc.h
 ../include/SDL_stdinc.h
@@ -645,4 +653,12 @@ C:/Work/cppgame/src/SceneManager.h
 C:/Work/cppgame/src/SceneManager.h
 SDL.h
 C:/Work/cppgame/src/SDL.h
+Scenes/Menu.h
+C:/Work/cppgame/src/Scenes/Menu.h
+
+C:/Work/cppgame/src/Scenes/Menu.h
+SDL.h
+C:/Work/cppgame/src/Scenes/SDL.h
+SDL_ttf.h
+C:/Work/cppgame/src/Scenes/SDL_ttf.h
 

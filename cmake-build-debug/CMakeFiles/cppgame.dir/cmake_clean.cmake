@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/cppgame.dir/src/Core.cpp.obj"
   "CMakeFiles/cppgame.dir/src/Global.cpp.obj"
   "CMakeFiles/cppgame.dir/src/SceneManager.cpp.obj"
+  "CMakeFiles/cppgame.dir/src/Scenes/Menu.cpp.obj"
   "cppgame.exe"
   "cppgame.exe.manifest"
   "cppgame.lib"

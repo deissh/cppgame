@@ -1,4 +1,5 @@
 "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" C:\Work\cppgame
+-- Could NOT find SDL_ttf (missing: SDL_TTF_LIBRARIES SDL_TTF_INCLUDE_DIRS) 
 -- Configuring done
 -- Generating done
 -- Build files have been written to: C:/Work/cppgame/cmake-build-debug

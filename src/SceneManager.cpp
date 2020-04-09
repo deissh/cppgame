@@ -2,6 +2,8 @@
 // Created by Кирилл on 04.04.2020.
 //
 
+#include <iostream>
+#include <string>
 #include "SceneManager.h"
 
 SceneManager::SceneManager() {
@@ -43,6 +45,22 @@ void SceneManager::Draw(SDL_Renderer *rR) {
     }
 }
 
-void SceneManager::setBackgroundColor(SDL_Renderer *rR) {
+void SceneManager::LeftMousePressedEvent(int mouseX, int mouseY) {
+    std::cout << "x:" + std::to_string(mouseX) + " y:" + std::to_string(mouseY) + "\n";
+
+    switch (this->currentGameState) {
+        case sMainMenu:
+            this->menuScene->LeftMousePressedEvent(mouseX, mouseY);
+            break;
+        case sGameLoading:
+            break;
+        case sGame:
+            break;
+        case sLevelEditor:
+            break;
+    }
+}
+
+void SceneManager::MouseMove(int x, int y) {
 
 }

@@ -258,6 +258,9 @@ CMakeFiles/cppgame.dir/src/Scenes/Menu.cpp.obj
  ../include/SDL_video.h
  ../include/begin_code.h
  ../include/close_code.h
+ C:/Work/cppgame/src/Core.h
+ C:/Work/cppgame/src/Global.h
+ C:/Work/cppgame/src/SceneManager.h
  C:/Work/cppgame/src/Scenes/Menu.cpp
  C:/Work/cppgame/src/Scenes/Menu.h
  C:/Work/cppgame/src/helpers/DrawRect.h

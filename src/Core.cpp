@@ -9,10 +9,6 @@
 const std::string GAME_TITLE = "Arcanoid 2000";
 
 Core::Core() {
-    this->quitGame = false;
-    this->mouseX = 0;
-    this->mouseY = 0;
-
     this->iFPS = 0;
     this->iNumOfFPS = 0;
     this->lFPSTime = 0;
@@ -44,12 +40,14 @@ Core::~Core() {
 void Core::mainLoop() {
     lFPSTime = SDL_GetTicks();
 
-    while(!quitGame && mainEvent->type != SDL_QUIT) {
+    while(!Core::quitGame && mainEvent->type != SDL_QUIT) {
         frameTime = SDL_GetTicks();
         SDL_PollEvent(mainEvent);
         SDL_RenderClear(rR);
 
         SDL_RenderFillRect(rR, NULL);
+
+        MouseInput();
 
         Update(this->getDelta());
         Draw();
@@ -85,4 +83,49 @@ double Core::getDelta() {
     LAST = NOW;
     NOW = SDL_GetPerformanceCounter();
     return (double)((NOW - LAST)*1000 / (double)SDL_GetPerformanceFrequency() );
+}
+
+void Core::MouseInput() {
+    switch(mainEvent->type) {
+        case SDL_MOUSEBUTTONDOWN: {
+            switch (mainEvent->button.button) {
+                case SDL_BUTTON_LEFT:
+                    mouseLeftPressed = true;
+                    break;
+                case SDL_BUTTON_RIGHT:
+                    mouseRightPressed = true;
+                    break;
+            }
+
+            this->SceneManager.LeftMousePressedEvent(mouseX, mouseY);
+            break;
+        }
+        case SDL_MOUSEMOTION: {
+            SDL_GetMouseState(&mouseX, &mouseY);
+//            std::cout << "x:" + std::to_string(mouseX);
+//            std::cout << "y:" + std::to_string(mouseY);
+            break;
+        }
+        case SDL_MOUSEBUTTONUP: {
+            switch (mainEvent->button.button) {
+                case SDL_BUTTON_LEFT:
+                    mouseLeftPressed = false;
+                    break;
+                case SDL_BUTTON_RIGHT:
+                    mouseRightPressed = false;
+                    break;
+            }
+            break;
+        }
+        case SDL_MOUSEWHEEL:
+            if(mainEvent->wheel.timestamp > SDL_GetTicks() - 2) {
+                std::cout << "weel change y:" + std::to_string(mainEvent->wheel.y) + "\n";
+            }
+            break;
+    }
+}
+
+bool Core::quitGame = false;
+void Core::Quit() {
+    Core::quitGame = true;
 }

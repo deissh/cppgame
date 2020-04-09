@@ -28,7 +28,8 @@ public:
     void Update(double delta);
     void Draw(SDL_Renderer* rR);
 
-    void setBackgroundColor(SDL_Renderer* rR);
+    void LeftMousePressedEvent(int mouseX, int mouseY);
+    void MouseMove(int mouseX, int mouseY);
 };
 
 

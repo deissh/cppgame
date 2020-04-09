@@ -27,11 +27,14 @@ private:
     unsigned long lFPSTime;
     int iNumOfFPS;
     int iFPS;
+
+    void MouseInput();
 public:
     Core();
     ~Core();
 
-    bool quitGame;
+    static bool quitGame;
+    static void Quit();
 
     double getDelta();
 
@@ -39,6 +42,7 @@ public:
     void Update(double delta);
     void Draw();
 
+    bool mouseLeftPressed, mouseRightPressed = false;
     int mouseX, mouseY = 0;
 };
 

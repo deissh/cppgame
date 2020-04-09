@@ -257,6 +257,9 @@ CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj: ..\include\SDL_version.h
 CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj: ..\include\SDL_video.h
 CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj: ..\include\begin_code.h
 CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj: ..\include\close_code.h
+CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj: ..\src\Core.h
+CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj: ..\src\Global.h
+CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj: ..\src\SceneManager.h
 CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj: ..\src\Scenes\Menu.cpp
 CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj: ..\src\Scenes\Menu.h
 CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj: ..\src\helpers\DrawRect.h

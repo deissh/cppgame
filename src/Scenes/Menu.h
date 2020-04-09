@@ -12,12 +12,17 @@ class Menu {
 private:
     TTF_Font* font;
 
+    SDL_Rect startBtnRct;
+    SDL_Rect exitBtnRct;
+
 public:
     Menu();
     ~Menu();
 
     void Update(double delta);
     void Draw(SDL_Renderer* rR);
+
+    void LeftMousePressedEvent(int mouseX, int mouseY);
 
     void enter();
     void escape();

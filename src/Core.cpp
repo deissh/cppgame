@@ -102,8 +102,7 @@ void Core::MouseInput() {
         }
         case SDL_MOUSEMOTION: {
             SDL_GetMouseState(&mouseX, &mouseY);
-//            std::cout << "x:" + std::to_string(mouseX);
-//            std::cout << "y:" + std::to_string(mouseY);
+            this->SceneManager.MouseMove(mouseX, mouseY);
             break;
         }
         case SDL_MOUSEBUTTONUP: {

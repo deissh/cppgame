@@ -31,8 +31,6 @@ Menu::~Menu() {
 
     TTF_Quit();
     SDL_Quit();
-
-    delete this->font;
 }
 
 void Menu::Update(double delta) {
@@ -59,5 +57,10 @@ int in_rect(int x, int y, struct SDL_Rect *r) {
 }
 
 void Menu::LeftMousePressedEvent(int mouseX, int mouseY) {
-    if (in_rect(mouseX, mouseY, &this->exitBtnRct)) Core::Quit();
+    if (in_rect(mouseX, mouseY, &this->exitBtnRct))
+        return Core::Quit();
+}
+
+void Menu::MouseMove(int mouseX, int mouseY) {
+
 }

@@ -204,14 +204,14 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Path to a library.
 SDL2MAIN_LIBRARY:FILEPATH=C:/Work/cppgame/cmake-build-debug/../lib/x86/SDL2main.lib
 
-//The directory containing a CMake configuration file for SDL2.
-SDL2_DIR:PATH=SDL2_DIR-NOTFOUND
+//SDL2 directory
+SDL2_DIR:PATH=
 
 //Path to a file.
 SDL2_INCLUDE_DIR:PATH=C:/Work/cppgame/cmake-build-debug/../include
 
 //Where the SDL Library can be found
-SDL2_LIBRARY:STRING=C:/Work/cppgame/cmake-build-debug/../lib/x86/SDL2.lib
+SDL2_LIBRARY:STRING=SDL2_ttf.dll;C:/Work/cppgame/cmake-build-debug/../lib/x86/SDL2.lib
 
 //Path to a file.
 SDL_TTF_INCLUDE_DIR:PATH=SDL_TTF_INCLUDE_DIR-NOTFOUND
@@ -367,7 +367,7 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding SDL
-FIND_PACKAGE_MESSAGE_DETAILS_SDL:INTERNAL=[C:/Work/cppgame/cmake-build-debug/../lib/x86/SDL2.lib][C:/Work/cppgame/cmake-build-debug/../include][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_SDL:INTERNAL=[SDL2_ttf.dll;C:/Work/cppgame/cmake-build-debug/../lib/x86/SDL2.lib][C:/Work/cppgame/cmake-build-debug/../include][v()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Path to a library.

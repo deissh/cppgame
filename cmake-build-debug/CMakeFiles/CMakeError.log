@@ -1,9 +1,9 @@
 Determining if the include file pthread.h exists failed with the following output:
 Change Dir: C:/Work/cppgame/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_f10d8\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_f10d8.dir\build.make /nologo -L                  CMakeFiles\cmTC_f10d8.dir\build
-Building C object CMakeFiles/cmTC_f10d8.dir/CheckIncludeFile.c.obj
-	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\cl.exe @C:\Users\C523~1\AppData\Local\Temp\nmDFC9.tmp
+Run Build Command(s):nmake /nologo cmTC_368c9\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_368c9.dir\build.make /nologo -L                  CMakeFiles\cmTC_368c9.dir\build
+Building C object CMakeFiles/cmTC_368c9.dir/CheckIncludeFile.c.obj
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\cl.exe @C:\Users\C523~1\AppData\Local\Temp\nmCE9A.tmp
 CheckIncludeFile.c
 C:\Work\cppgame\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: Не удается открыть файл включение: pthread.h: No such file or directory,
 NMAKE : fatal error U1077: C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\cl.exe : тючтЁр∙хээ√щ ъюф "0x2"

@@ -23,6 +23,7 @@ public:
     void Draw(SDL_Renderer* rR);
 
     void LeftMousePressedEvent(int mouseX, int mouseY);
+    void MouseMove(int mouseX, int mouseY);
 
     void enter();
     void escape();

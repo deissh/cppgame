@@ -46,8 +46,6 @@ void SceneManager::Draw(SDL_Renderer *rR) {
 }
 
 void SceneManager::LeftMousePressedEvent(int mouseX, int mouseY) {
-    std::cout << "x:" + std::to_string(mouseX) + " y:" + std::to_string(mouseY) + "\n";
-
     switch (this->currentGameState) {
         case sMainMenu:
             this->menuScene->LeftMousePressedEvent(mouseX, mouseY);
@@ -62,5 +60,15 @@ void SceneManager::LeftMousePressedEvent(int mouseX, int mouseY) {
 }
 
 void SceneManager::MouseMove(int x, int y) {
-
+    switch (this->currentGameState) {
+        case sMainMenu:
+            this->menuScene->MouseMove(x, y);
+            break;
+        case sGameLoading:
+            break;
+        case sGame:
+            break;
+        case sLevelEditor:
+            break;
+    }
 }

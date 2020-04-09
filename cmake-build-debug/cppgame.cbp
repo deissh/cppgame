@@ -107,6 +107,12 @@
 		<Unit filename="C:/Work/cppgame/src/SceneManager.h">
 			<Option target="cppgame"/>
 		</Unit>
+		<Unit filename="C:/Work/cppgame/src/Scenes/Gameplay.cpp">
+			<Option target="cppgame"/>
+		</Unit>
+		<Unit filename="C:/Work/cppgame/src/Scenes/Gameplay.h">
+			<Option target="cppgame"/>
+		</Unit>
 		<Unit filename="C:/Work/cppgame/src/Scenes/Menu.cpp">
 			<Option target="cppgame"/>
 		</Unit>

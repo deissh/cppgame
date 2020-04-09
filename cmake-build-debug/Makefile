@@ -232,6 +232,33 @@ src\SceneManager.cpp.s:
 	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\SceneManager.cpp.s
 .PHONY : src\SceneManager.cpp.s
 
+src\Scenes\Gameplay.obj: src\Scenes\Gameplay.cpp.obj
+
+.PHONY : src\Scenes\Gameplay.obj
+
+# target to build an object file
+src\Scenes\Gameplay.cpp.obj:
+	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj
+.PHONY : src\Scenes\Gameplay.cpp.obj
+
+src\Scenes\Gameplay.i: src\Scenes\Gameplay.cpp.i
+
+.PHONY : src\Scenes\Gameplay.i
+
+# target to preprocess a source file
+src\Scenes\Gameplay.cpp.i:
+	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.i
+.PHONY : src\Scenes\Gameplay.cpp.i
+
+src\Scenes\Gameplay.s: src\Scenes\Gameplay.cpp.s
+
+.PHONY : src\Scenes\Gameplay.s
+
+# target to generate assembly for a file
+src\Scenes\Gameplay.cpp.s:
+	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.s
+.PHONY : src\Scenes\Gameplay.cpp.s
+
 src\Scenes\Menu.obj: src\Scenes\Menu.cpp.obj
 
 .PHONY : src\Scenes\Menu.obj
@@ -280,6 +307,9 @@ help:
 	@echo ... src/SceneManager.obj
 	@echo ... src/SceneManager.i
 	@echo ... src/SceneManager.s
+	@echo ... src/Scenes/Gameplay.obj
+	@echo ... src/Scenes/Gameplay.i
+	@echo ... src/Scenes/Gameplay.s
 	@echo ... src/Scenes/Menu.obj
 	@echo ... src/Scenes/Menu.i
 	@echo ... src/Scenes/Menu.s

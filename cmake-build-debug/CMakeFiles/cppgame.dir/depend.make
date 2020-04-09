@@ -52,6 +52,7 @@ CMakeFiles\cppgame.dir\Main.cpp.obj: ..\Main.cpp
 CMakeFiles\cppgame.dir\Main.cpp.obj: ..\src\Core.h
 CMakeFiles\cppgame.dir\Main.cpp.obj: ..\src\Global.h
 CMakeFiles\cppgame.dir\Main.cpp.obj: ..\src\SceneManager.h
+CMakeFiles\cppgame.dir\Main.cpp.obj: ..\src\Scenes\Gameplay.h
 CMakeFiles\cppgame.dir\Main.cpp.obj: ..\src\Scenes\Menu.h
 
 CMakeFiles\cppgame.dir\src\Core.cpp.obj: ..\include\SDL.h
@@ -105,6 +106,7 @@ CMakeFiles\cppgame.dir\src\Core.cpp.obj: ..\src\Core.cpp
 CMakeFiles\cppgame.dir\src\Core.cpp.obj: ..\src\Core.h
 CMakeFiles\cppgame.dir\src\Core.cpp.obj: ..\src\Global.h
 CMakeFiles\cppgame.dir\src\Core.cpp.obj: ..\src\SceneManager.h
+CMakeFiles\cppgame.dir\src\Core.cpp.obj: ..\src\Scenes\Gameplay.h
 CMakeFiles\cppgame.dir\src\Core.cpp.obj: ..\src\Scenes\Menu.h
 
 CMakeFiles\cppgame.dir\src\Global.cpp.obj: ..\include\SDL.h
@@ -157,6 +159,7 @@ CMakeFiles\cppgame.dir\src\Global.cpp.obj: ..\include\close_code.h
 CMakeFiles\cppgame.dir\src\Global.cpp.obj: ..\src\Global.cpp
 CMakeFiles\cppgame.dir\src\Global.cpp.obj: ..\src\Global.h
 CMakeFiles\cppgame.dir\src\Global.cpp.obj: ..\src\SceneManager.h
+CMakeFiles\cppgame.dir\src\Global.cpp.obj: ..\src\Scenes\Gameplay.h
 CMakeFiles\cppgame.dir\src\Global.cpp.obj: ..\src\Scenes\Menu.h
 
 CMakeFiles\cppgame.dir\src\SceneManager.cpp.obj: ..\include\SDL.h
@@ -208,7 +211,60 @@ CMakeFiles\cppgame.dir\src\SceneManager.cpp.obj: ..\include\begin_code.h
 CMakeFiles\cppgame.dir\src\SceneManager.cpp.obj: ..\include\close_code.h
 CMakeFiles\cppgame.dir\src\SceneManager.cpp.obj: ..\src\SceneManager.cpp
 CMakeFiles\cppgame.dir\src\SceneManager.cpp.obj: ..\src\SceneManager.h
+CMakeFiles\cppgame.dir\src\SceneManager.cpp.obj: ..\src\Scenes\Gameplay.h
 CMakeFiles\cppgame.dir\src\SceneManager.cpp.obj: ..\src\Scenes\Menu.h
+
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_assert.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_atomic.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_audio.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_blendmode.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_clipboard.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_config.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_cpuinfo.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_endian.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_error.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_events.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_filesystem.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_gamecontroller.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_gesture.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_haptic.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_hints.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_joystick.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_keyboard.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_keycode.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_loadso.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_log.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_main.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_messagebox.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_metal.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_mouse.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_mutex.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_pixels.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_platform.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_power.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_quit.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_rect.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_render.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_rwops.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_scancode.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_sensor.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_shape.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_stdinc.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_surface.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_system.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_thread.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_timer.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_touch.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_ttf.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_version.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_video.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\begin_code.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\close_code.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\src\Scenes\Gameplay.cpp
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\src\Scenes\Gameplay.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\src\helpers\DrawRect.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\src\helpers\DrawText.h
 
 CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj: ..\include\SDL.h
 CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj: ..\include\SDL_assert.h
@@ -260,6 +316,7 @@ CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj: ..\include\close_code.h
 CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj: ..\src\Core.h
 CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj: ..\src\Global.h
 CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj: ..\src\SceneManager.h
+CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj: ..\src\Scenes\Gameplay.h
 CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj: ..\src\Scenes\Menu.cpp
 CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj: ..\src\Scenes\Menu.h
 CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj: ..\src\helpers\DrawRect.h

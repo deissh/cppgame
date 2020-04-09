@@ -9,7 +9,7 @@
 #include "../Core.h"
 
 Menu::Menu() {
-    if (TTF_Init() < 0) std::cerr << "Problem initializing SDL_ttf" << std::endl;
+    if (TTF_Init() < 0) std::cerr << "Could not initialize SDL_ttf" << std::endl;
 
     this->font = TTF_OpenFont("Pixeboy-z8XGD.ttf", 70);
     if (!this->font) std::cerr << "Could not load font " << TTF_GetError() << std::endl;
@@ -44,11 +44,19 @@ void Menu::Draw(SDL_Renderer *rR) {
     DrawText::Simple(rR, this->font, "by deissh, 2020", 800 / 2 + 150, 600 / 2, 150, 20);
 
     // === Buttons ===
-    DrawRect::Simple(rR, this->startBtnRct.x, this->startBtnRct.y, this->startBtnRct.w, this->startBtnRct.h);
-    DrawText::Simple(rR, this->font, "Start", this->startBtnRct.x, this->startBtnRct.y, this->startBtnRct.w, this->startBtnRct.h);
+    DrawRect::Simple(rR,
+            this->startBtnRct.x, this->startBtnRct.y,
+            this->startBtnRct.w, this->startBtnRct.h);
+    DrawText::Simple(rR, this->font, "Start",
+            this->startBtnRct.x, this->startBtnRct.y,
+            this->startBtnRct.w, this->startBtnRct.h);
 
-    DrawRect::Simple(rR, this->exitBtnRct.x, this->exitBtnRct.y, this->exitBtnRct.w, this->exitBtnRct.h);
-    DrawText::Simple(rR, this->font, "Exit", this->exitBtnRct.x + 50, this->exitBtnRct.y, this->exitBtnRct.w - 100, this->exitBtnRct.h);
+    DrawRect::Simple(rR,
+            this->exitBtnRct.x, this->exitBtnRct.y,
+            this->exitBtnRct.w, this->exitBtnRct.h);
+    DrawText::Simple(rR, this->font, "Exit",
+            this->exitBtnRct.x + 50, this->exitBtnRct.y,
+            this->exitBtnRct.w - 100, this->exitBtnRct.h);
 }
 
 int in_rect(int x, int y, struct SDL_Rect *r) {
@@ -57,6 +65,9 @@ int in_rect(int x, int y, struct SDL_Rect *r) {
 }
 
 void Menu::LeftMousePressedEvent(int mouseX, int mouseY) {
+    if (in_rect(mouseX, mouseY, &this->startBtnRct))
+        Global::getSM()->scene = Global::getSM()->sGame;
+
     if (in_rect(mouseX, mouseY, &this->exitBtnRct))
         return Core::Quit();
 }

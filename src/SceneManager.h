@@ -7,23 +7,24 @@
 
 #include "SDL.h"
 #include "Scenes/Menu.h"
+#include "Scenes/Gameplay.h"
 
 class SceneManager {
 private:
     Menu * menuScene;
-
+    Gameplay * gameplay;
 public:
     SceneManager();
     ~SceneManager();
 
-    enum gameState {
+    enum Scene {
         sMainMenu,
         sGameLoading,
         sGame,
         sLevelEditor,
     };
 
-    gameState currentGameState;
+    Scene scene;
 
     void Update(double delta);
     void Draw(SDL_Renderer* rR);

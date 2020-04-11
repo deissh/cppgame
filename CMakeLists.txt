@@ -9,7 +9,7 @@ find_package(SDL_TTF REQUIRED)
 include_directories(${SDL2_INCLUDE_DIRS})
 
 
-add_executable(cppgame Main.cpp src/Core.cpp src/Core.h src/SceneManager.cpp src/SceneManager.h src/Global.cpp src/Global.h src/Scenes/Menu.cpp src/Scenes/Menu.h src/helpers/DrawText.h src/helpers/DrawRect.h src/Scenes/Gameplay.cpp src/Scenes/Gameplay.h)
+add_executable(cppgame Main.cpp src/Core.cpp src/Core.h src/SceneManager.cpp src/SceneManager.h src/Global.cpp src/Global.h src/scenes/Menu.cpp src/scenes/Menu.h src/helpers/Draw.h src/scenes/Gameplay.cpp src/scenes/Gameplay.h src/helpers/vec2.h src/Entity.cpp src/Entity.h)
 target_link_libraries(cppgame ${SDL2_LIBRARIES})
 
 # copy dlls into build folder

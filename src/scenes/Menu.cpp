@@ -4,8 +4,7 @@
 
 #include "Menu.h"
 #include "iostream"
-#include "../helpers/DrawRect.h"
-#include "../helpers/DrawText.h"
+#include "../helpers/Draw.h"
 #include "../Core.h"
 
 Menu::Menu() {
@@ -40,21 +39,21 @@ void Menu::Update(double delta) {
 void Menu::Draw(SDL_Renderer *rR) {
     // todo: получение размеров окна
     // рисуем просто лого для игры
-    DrawText::Simple(rR, this->font, "Arkanoid", 800 / 2 - 300, 600 / 2 - 150, 600, 150);
-    DrawText::Simple(rR, this->font, "by deissh, 2020", 800 / 2 + 150, 600 / 2, 150, 20);
+    Draw::Text(rR, this->font, "Arkanoid", 800 / 2 - 300, 600 / 2 - 150, 600, 150);
+    Draw::Text(rR, this->font, "9000", 800 / 2 + 150, 600 / 2, 150, 20);
 
     // === Buttons ===
-    DrawRect::Simple(rR,
+    Draw::Rect(rR,
             this->startBtnRct.x, this->startBtnRct.y,
             this->startBtnRct.w, this->startBtnRct.h);
-    DrawText::Simple(rR, this->font, "Start",
+    Draw::Text(rR, this->font, "Start",
             this->startBtnRct.x, this->startBtnRct.y,
             this->startBtnRct.w, this->startBtnRct.h);
 
-    DrawRect::Simple(rR,
+    Draw::Rect(rR,
             this->exitBtnRct.x, this->exitBtnRct.y,
             this->exitBtnRct.w, this->exitBtnRct.h);
-    DrawText::Simple(rR, this->font, "Exit",
+    Draw::Text(rR, this->font, "Exit",
             this->exitBtnRct.x + 50, this->exitBtnRct.y,
             this->exitBtnRct.w - 100, this->exitBtnRct.h);
 }

@@ -109,6 +109,10 @@ CMakeFiles/cppgame.dir/src/Core.cpp.obj
  C:/Work/cppgame/src/SceneManager.h
  C:/Work/cppgame/src/Scenes/Gameplay.h
  C:/Work/cppgame/src/Scenes/Menu.h
+CMakeFiles/cppgame.dir/src/Entity.cpp.obj
+ C:/Work/cppgame/src/Entity.cpp
+ C:/Work/cppgame/src/Entity.h
+ C:/Work/cppgame/src/helpers/vec2.h
 CMakeFiles/cppgame.dir/src/Global.cpp.obj
  ../include/SDL.h
  ../include/SDL_assert.h
@@ -262,10 +266,9 @@ CMakeFiles/cppgame.dir/src/Scenes/Gameplay.cpp.obj
  ../include/SDL_video.h
  ../include/begin_code.h
  ../include/close_code.h
- C:/Work/cppgame/src/Scenes/Gameplay.cpp
- C:/Work/cppgame/src/Scenes/Gameplay.h
- C:/Work/cppgame/src/helpers/DrawRect.h
- C:/Work/cppgame/src/helpers/DrawText.h
+ C:/Work/cppgame/src/helpers/Draw.h
+ C:/Work/cppgame/src/scenes/Gameplay.cpp
+ C:/Work/cppgame/src/scenes/Gameplay.h
 CMakeFiles/cppgame.dir/src/Scenes/Menu.cpp.obj
  ../include/SDL.h
  ../include/SDL_assert.h
@@ -317,8 +320,7 @@ CMakeFiles/cppgame.dir/src/Scenes/Menu.cpp.obj
  C:/Work/cppgame/src/Core.h
  C:/Work/cppgame/src/Global.h
  C:/Work/cppgame/src/SceneManager.h
- C:/Work/cppgame/src/Scenes/Gameplay.h
- C:/Work/cppgame/src/Scenes/Menu.cpp
- C:/Work/cppgame/src/Scenes/Menu.h
- C:/Work/cppgame/src/helpers/DrawRect.h
- C:/Work/cppgame/src/helpers/DrawText.h
+ C:/Work/cppgame/src/helpers/Draw.h
+ C:/Work/cppgame/src/scenes/Gameplay.h
+ C:/Work/cppgame/src/scenes/Menu.cpp
+ C:/Work/cppgame/src/scenes/Menu.h

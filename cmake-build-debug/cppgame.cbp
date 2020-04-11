@@ -95,6 +95,12 @@
 		<Unit filename="C:/Work/cppgame/src/Core.h">
 			<Option target="cppgame"/>
 		</Unit>
+		<Unit filename="C:/Work/cppgame/src/Entity.cpp">
+			<Option target="cppgame"/>
+		</Unit>
+		<Unit filename="C:/Work/cppgame/src/Entity.h">
+			<Option target="cppgame"/>
+		</Unit>
 		<Unit filename="C:/Work/cppgame/src/Global.cpp">
 			<Option target="cppgame"/>
 		</Unit>
@@ -107,22 +113,22 @@
 		<Unit filename="C:/Work/cppgame/src/SceneManager.h">
 			<Option target="cppgame"/>
 		</Unit>
-		<Unit filename="C:/Work/cppgame/src/Scenes/Gameplay.cpp">
+		<Unit filename="C:/Work/cppgame/src/helpers/Draw.h">
 			<Option target="cppgame"/>
 		</Unit>
-		<Unit filename="C:/Work/cppgame/src/Scenes/Gameplay.h">
+		<Unit filename="C:/Work/cppgame/src/helpers/vec2.h">
 			<Option target="cppgame"/>
 		</Unit>
-		<Unit filename="C:/Work/cppgame/src/Scenes/Menu.cpp">
+		<Unit filename="C:/Work/cppgame/src/scenes/Gameplay.cpp">
 			<Option target="cppgame"/>
 		</Unit>
-		<Unit filename="C:/Work/cppgame/src/Scenes/Menu.h">
+		<Unit filename="C:/Work/cppgame/src/scenes/Gameplay.h">
 			<Option target="cppgame"/>
 		</Unit>
-		<Unit filename="C:/Work/cppgame/src/helpers/DrawRect.h">
+		<Unit filename="C:/Work/cppgame/src/scenes/Menu.cpp">
 			<Option target="cppgame"/>
 		</Unit>
-		<Unit filename="C:/Work/cppgame/src/helpers/DrawText.h">
+		<Unit filename="C:/Work/cppgame/src/scenes/Menu.h">
 			<Option target="cppgame"/>
 		</Unit>
 		<Unit filename="C:/Work/cppgame/CMakeLists.txt">

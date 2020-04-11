@@ -6,10 +6,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Work/cppgame/Main.cpp" "C:/Work/cppgame/cmake-build-debug/CMakeFiles/cppgame.dir/Main.cpp.obj"
   "C:/Work/cppgame/src/Core.cpp" "C:/Work/cppgame/cmake-build-debug/CMakeFiles/cppgame.dir/src/Core.cpp.obj"
+  "C:/Work/cppgame/src/Entity.cpp" "C:/Work/cppgame/cmake-build-debug/CMakeFiles/cppgame.dir/src/Entity.cpp.obj"
   "C:/Work/cppgame/src/Global.cpp" "C:/Work/cppgame/cmake-build-debug/CMakeFiles/cppgame.dir/src/Global.cpp.obj"
   "C:/Work/cppgame/src/SceneManager.cpp" "C:/Work/cppgame/cmake-build-debug/CMakeFiles/cppgame.dir/src/SceneManager.cpp.obj"
-  "C:/Work/cppgame/src/Scenes/Gameplay.cpp" "C:/Work/cppgame/cmake-build-debug/CMakeFiles/cppgame.dir/src/Scenes/Gameplay.cpp.obj"
-  "C:/Work/cppgame/src/Scenes/Menu.cpp" "C:/Work/cppgame/cmake-build-debug/CMakeFiles/cppgame.dir/src/Scenes/Menu.cpp.obj"
+  "C:/Work/cppgame/src/scenes/Gameplay.cpp" "C:/Work/cppgame/cmake-build-debug/CMakeFiles/cppgame.dir/src/Scenes/Gameplay.cpp.obj"
+  "C:/Work/cppgame/src/scenes/Menu.cpp" "C:/Work/cppgame/cmake-build-debug/CMakeFiles/cppgame.dir/src/Scenes/Menu.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 

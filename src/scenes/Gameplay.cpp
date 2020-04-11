@@ -5,8 +5,7 @@
 #include <iostream>
 #include "Gameplay.h"
 #include "string"
-#include "../helpers/DrawText.h"
-#include "../helpers/DrawRect.h"
+#include "../helpers/Draw.h"
 
 Gameplay::Gameplay() {
     if (TTF_Init() < 0) std::cerr << "Could not initialize SDL_ttf" << std::endl;
@@ -26,16 +25,16 @@ void Gameplay::Update(double delta) {
 }
 
 void Gameplay::Draw(SDL_Renderer *rR) {
-    DrawText::Simple(rR, this->font, "Scores: " + std::to_string(this->state.getScore()),
+    Draw::Text(rR, this->font, "Scores: " + std::to_string(this->state.getScore()),
             5, 5,
             100, 25);
 
-    DrawRect::Simple(rR,
+    Draw::Rect(rR,
             5, 35,
             800 - 10, 800 - 10);
 
     // platform
-    DrawRect::Simple(rR,
+    Draw::Rect(rR,
                      100, 800 - 50,
                      150, 25);
 }

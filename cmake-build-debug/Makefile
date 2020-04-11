@@ -178,6 +178,33 @@ src\Core.cpp.s:
 	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\Core.cpp.s
 .PHONY : src\Core.cpp.s
 
+src\Entity.obj: src\Entity.cpp.obj
+
+.PHONY : src\Entity.obj
+
+# target to build an object file
+src\Entity.cpp.obj:
+	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\Entity.cpp.obj
+.PHONY : src\Entity.cpp.obj
+
+src\Entity.i: src\Entity.cpp.i
+
+.PHONY : src\Entity.i
+
+# target to preprocess a source file
+src\Entity.cpp.i:
+	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\Entity.cpp.i
+.PHONY : src\Entity.cpp.i
+
+src\Entity.s: src\Entity.cpp.s
+
+.PHONY : src\Entity.s
+
+# target to generate assembly for a file
+src\Entity.cpp.s:
+	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\Entity.cpp.s
+.PHONY : src\Entity.cpp.s
+
 src\Global.obj: src\Global.cpp.obj
 
 .PHONY : src\Global.obj
@@ -232,59 +259,59 @@ src\SceneManager.cpp.s:
 	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\SceneManager.cpp.s
 .PHONY : src\SceneManager.cpp.s
 
-src\Scenes\Gameplay.obj: src\Scenes\Gameplay.cpp.obj
+src\scenes\Gameplay.obj: src\scenes\Gameplay.cpp.obj
 
-.PHONY : src\Scenes\Gameplay.obj
-
-# target to build an object file
-src\Scenes\Gameplay.cpp.obj:
-	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj
-.PHONY : src\Scenes\Gameplay.cpp.obj
-
-src\Scenes\Gameplay.i: src\Scenes\Gameplay.cpp.i
-
-.PHONY : src\Scenes\Gameplay.i
-
-# target to preprocess a source file
-src\Scenes\Gameplay.cpp.i:
-	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.i
-.PHONY : src\Scenes\Gameplay.cpp.i
-
-src\Scenes\Gameplay.s: src\Scenes\Gameplay.cpp.s
-
-.PHONY : src\Scenes\Gameplay.s
-
-# target to generate assembly for a file
-src\Scenes\Gameplay.cpp.s:
-	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.s
-.PHONY : src\Scenes\Gameplay.cpp.s
-
-src\Scenes\Menu.obj: src\Scenes\Menu.cpp.obj
-
-.PHONY : src\Scenes\Menu.obj
+.PHONY : src\scenes\Gameplay.obj
 
 # target to build an object file
-src\Scenes\Menu.cpp.obj:
-	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj
-.PHONY : src\Scenes\Menu.cpp.obj
+src\scenes\Gameplay.cpp.obj:
+	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\scenes\Gameplay.cpp.obj
+.PHONY : src\scenes\Gameplay.cpp.obj
 
-src\Scenes\Menu.i: src\Scenes\Menu.cpp.i
+src\scenes\Gameplay.i: src\scenes\Gameplay.cpp.i
 
-.PHONY : src\Scenes\Menu.i
+.PHONY : src\scenes\Gameplay.i
 
 # target to preprocess a source file
-src\Scenes\Menu.cpp.i:
-	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.i
-.PHONY : src\Scenes\Menu.cpp.i
+src\scenes\Gameplay.cpp.i:
+	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\scenes\Gameplay.cpp.i
+.PHONY : src\scenes\Gameplay.cpp.i
 
-src\Scenes\Menu.s: src\Scenes\Menu.cpp.s
+src\scenes\Gameplay.s: src\scenes\Gameplay.cpp.s
 
-.PHONY : src\Scenes\Menu.s
+.PHONY : src\scenes\Gameplay.s
 
 # target to generate assembly for a file
-src\Scenes\Menu.cpp.s:
-	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.s
-.PHONY : src\Scenes\Menu.cpp.s
+src\scenes\Gameplay.cpp.s:
+	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\scenes\Gameplay.cpp.s
+.PHONY : src\scenes\Gameplay.cpp.s
+
+src\scenes\Menu.obj: src\scenes\Menu.cpp.obj
+
+.PHONY : src\scenes\Menu.obj
+
+# target to build an object file
+src\scenes\Menu.cpp.obj:
+	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\scenes\Menu.cpp.obj
+.PHONY : src\scenes\Menu.cpp.obj
+
+src\scenes\Menu.i: src\scenes\Menu.cpp.i
+
+.PHONY : src\scenes\Menu.i
+
+# target to preprocess a source file
+src\scenes\Menu.cpp.i:
+	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\scenes\Menu.cpp.i
+.PHONY : src\scenes\Menu.cpp.i
+
+src\scenes\Menu.s: src\scenes\Menu.cpp.s
+
+.PHONY : src\scenes\Menu.s
+
+# target to generate assembly for a file
+src\scenes\Menu.cpp.s:
+	$(MAKE) -f CMakeFiles\cppgame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\cppgame.dir\src\scenes\Menu.cpp.s
+.PHONY : src\scenes\Menu.cpp.s
 
 # Help Target
 help:
@@ -301,18 +328,21 @@ help:
 	@echo ... src/Core.obj
 	@echo ... src/Core.i
 	@echo ... src/Core.s
+	@echo ... src/Entity.obj
+	@echo ... src/Entity.i
+	@echo ... src/Entity.s
 	@echo ... src/Global.obj
 	@echo ... src/Global.i
 	@echo ... src/Global.s
 	@echo ... src/SceneManager.obj
 	@echo ... src/SceneManager.i
 	@echo ... src/SceneManager.s
-	@echo ... src/Scenes/Gameplay.obj
-	@echo ... src/Scenes/Gameplay.i
-	@echo ... src/Scenes/Gameplay.s
-	@echo ... src/Scenes/Menu.obj
-	@echo ... src/Scenes/Menu.i
-	@echo ... src/Scenes/Menu.s
+	@echo ... src/scenes/Gameplay.obj
+	@echo ... src/scenes/Gameplay.i
+	@echo ... src/scenes/Gameplay.s
+	@echo ... src/scenes/Menu.obj
+	@echo ... src/scenes/Menu.i
+	@echo ... src/scenes/Menu.s
 .PHONY : help
 
 

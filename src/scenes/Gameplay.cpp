@@ -5,6 +5,7 @@
 #include "Gameplay.h"
 #include "string"
 #include "../helpers/Draw.h"
+#include "../Global.h"
 
 Gameplay::Gameplay() {
     if (TTF_Init() < 0) std::cerr << "Could not initialize SDL_ttf" << std::endl;
@@ -12,13 +13,15 @@ Gameplay::Gameplay() {
     this->font = TTF_OpenFont("Pixeboy-z8XGD.ttf", 70);
     if (!this->font) std::cerr << "Could not load font " << TTF_GetError() << std::endl;
 
-    platformPosition.x = SCREEN_X / 2 - PLATFORM_SIZE / 2;
-    platformPosition.y = SCREEN_Y - 50;
+    platform.x = SCREEN_X / 2 - PLATFORM_SIZE / 2;
+    platform.y = SCREEN_Y - 50;
+    platform.h = 25;
+    platform.w = PLATFORM_SIZE;
 
     // start at platform
     ballPosition.x = SCREEN_X / 2;
     ballPosition.y = SCREEN_Y - 100 - 5;
-    ballVelocity.x = 1;
+    ballVelocity.x = 0;
     ballVelocity.y = -1;
 }
 
@@ -30,12 +33,14 @@ Gameplay::~Gameplay() {
 }
 
 void Gameplay::Update(double delta) {
-    ballVelocity.normalize();
-    ballPosition.x += std::round(ballVelocity.x);
-    ballPosition.y += std::round(ballVelocity.y);
+    if (ballPosition.y >= SCREEN_Y)
+        Global::getSM()->scene = Global::getSM()->sMainMenu;
 
-    std::cout << "vx: " << ballVelocity.x << " vy: " << ballVelocity.y << "\n";
-    std::cout << "x: " << ballPosition.x << " y: " << ballPosition.y << "\n";
+    checkCollision();
+
+    ballVelocity.normalize();
+    ballPosition.x += std::round(ballVelocity.x) * 2;
+    ballPosition.y += std::round(ballVelocity.y) * 2;
 }
 
 void Gameplay::Draw(SDL_Renderer *rR) {
@@ -51,8 +56,8 @@ void Gameplay::Draw(SDL_Renderer *rR) {
     this->drawBlocks(rR);
     // === platform ===
     Draw::Rect(rR,
-               platformPosition.x, platformPosition.y,
-               PLATFORM_SIZE, 25);
+               platform.x, platform.y,
+               platform.w, platform.h);
     // === ball ===
     // todo: show/hide gizmo
     auto norm = ballVelocity.normalize() * 30;
@@ -70,14 +75,37 @@ void Gameplay::LeftMousePressedEvent(int x, int y) {
 void Gameplay::MouseMove(int x, int y) {
     // платформа двигается за мышкой
     if (5 + PLATFORM_SIZE / 2 < x && x < SCREEN_Y - 5 - PLATFORM_SIZE / 2)
-        this->platformPosition.x = x - PLATFORM_SIZE / 2;
+        this->platform.x = x - PLATFORM_SIZE / 2;
 }
 
 void Gameplay::drawBlocks(SDL_Renderer *rR) {
-    for (auto & brick : this->state.getGrid()) {
+    for (auto & brick : this->state.bricks) {
         if (brick.active == false) continue;
         Draw::Rect(rR,
                    brick.position.x, brick.position.y,
                    brick.position.w, brick.position.h);
+    }
+}
+
+bool Gameplay::in_collision(struct SDL_Rect r2) {
+    // Exit with no intersection if found separated along an axis
+    if (ballPosition.y > r2.y + r2.h || ballPosition.y + BALL_SIZE < r2.y) return false;
+    if (ballPosition.x < r2.x || ballPosition.x + BALL_SIZE > r2.x + r2.w) return false;
+
+    return true;
+}
+
+void Gameplay::checkCollision() {
+    if (in_collision(platform))
+        ballVelocity.y = -1;
+
+    for (auto i = 0; i < BOARD_W_COUNT; i++) for (auto j = 0; j < BOARD_H_COUNT; j++) {
+        auto idx = j + BOARD_H_COUNT * i;
+        if (!state.bricks[idx].active) continue;
+        if (in_collision(state.bricks[idx].position)) {
+            ballVelocity.y = 1;
+            state.bricks[idx].active = false;
+            state.addScore(1);
+        }
     }
 }

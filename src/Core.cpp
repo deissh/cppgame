@@ -27,7 +27,7 @@ Core::Core() {
     if(window == NULL)
         quitGame = true;
 
-    this->rR = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
+    this->rR = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     this->mainEvent = new SDL_Event();
 }
 

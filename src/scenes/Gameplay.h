@@ -22,19 +22,19 @@
 #define GRID_MIN_H 100
 #define BLOCK_W 20
 #define BOARD_W_COUNT 10
-#define BOARD_H_COUNT 5
+#define BOARD_H_COUNT 20
 
 class Brick {
 public:
     SDL_Rect position;
-    bool active;
+    bool active = true;
 };
 typedef std::vector<Brick> Grid;
 
 class State {
 private:
     int score = 0;
-    Grid bricks;
+
 
     void createGrid() {
         // todo: presets
@@ -42,7 +42,7 @@ private:
         auto w = SCREEN_X - 5;
         auto blockW = w / BOARD_W_COUNT;
 
-        bricks.resize(BOARD_H_COUNT * BOARD_W_COUNT);
+        bricks.resize(BOARD_H_COUNT * BOARD_W_COUNT, Brick());
 
         for (auto i = 0; i < BOARD_W_COUNT; i++) for (auto j = 0; j < BOARD_H_COUNT; j++) {
             auto idx = j + BOARD_H_COUNT * i;
@@ -50,8 +50,6 @@ private:
             this->bricks[idx].position.y = BLOCK_W * j + GRID_MIN_H;
             this->bricks[idx].position.w = blockW;
             this->bricks[idx].position.h = BLOCK_W;
-
-            this->bricks[idx].active = true;
         }
     }
 
@@ -61,7 +59,7 @@ public:
     void addScore(int value) { this->score += value; }
     auto getScore() { return this->score; }
 
-    Grid getGrid() { return this->bricks; };
+    Grid bricks;
 };
 
 
@@ -70,11 +68,13 @@ private:
     TTF_Font* font;
     State state;
 
-    vec2<int> platformPosition;
+    SDL_Rect platform;
     vec2<int> ballPosition;
     vec2<float> ballVelocity;
 
     void drawBlocks(SDL_Renderer *rR);
+    bool in_collision(struct SDL_Rect r2);
+    void checkCollision();
 
 public:
     Gameplay();

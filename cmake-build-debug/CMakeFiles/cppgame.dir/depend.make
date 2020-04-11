@@ -269,10 +269,13 @@ CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_version.h
 CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\SDL_video.h
 CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\begin_code.h
 CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\include\close_code.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\src\Global.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\src\SceneManager.h
 CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\src\helpers\Draw.h
 CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\src\helpers\vec2.h
 CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\src\scenes\Gameplay.cpp
 CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\src\scenes\Gameplay.h
+CMakeFiles\cppgame.dir\src\Scenes\Gameplay.cpp.obj: ..\src\scenes\Menu.h
 
 CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj: ..\include\SDL.h
 CMakeFiles\cppgame.dir\src\Scenes\Menu.cpp.obj: ..\include\SDL_assert.h

@@ -76,6 +76,8 @@ private:
     bool in_collision(struct SDL_Rect r2);
     void checkCollision();
 
+    void reset();
+
 public:
     Gameplay();
     ~Gameplay();

@@ -13,16 +13,7 @@ Gameplay::Gameplay() {
     this->font = TTF_OpenFont("Pixeboy-z8XGD.ttf", 70);
     if (!this->font) std::cerr << "Could not load font " << TTF_GetError() << std::endl;
 
-    platform.x = SCREEN_X / 2 - PLATFORM_SIZE / 2;
-    platform.y = SCREEN_Y - 50;
-    platform.h = 25;
-    platform.w = PLATFORM_SIZE;
-
-    // start at platform
-    ballPosition.x = SCREEN_X / 2;
-    ballPosition.y = SCREEN_Y - 100 - 5;
-    ballVelocity.x = 0;
-    ballVelocity.y = -1;
+    reset();
 }
 
 Gameplay::~Gameplay() {
@@ -33,8 +24,15 @@ Gameplay::~Gameplay() {
 }
 
 void Gameplay::Update(double delta) {
-    if (ballPosition.y >= SCREEN_Y)
+    if (ballPosition.y >= SCREEN_Y) {
+        // switch active scene
         Global::getSM()->scene = Global::getSM()->sMainMenu;
+        // reset all stats
+        state = State();
+        // setup default positions
+        reset();
+        return;
+    }
 
     checkCollision();
 
@@ -108,4 +106,17 @@ void Gameplay::checkCollision() {
             state.addScore(1);
         }
     }
+}
+
+void Gameplay::reset() {
+    platform.x = SCREEN_X / 2 - PLATFORM_SIZE / 2;
+    platform.y = SCREEN_Y - 50;
+    platform.h = 25;
+    platform.w = PLATFORM_SIZE;
+
+    // start at platform
+    ballPosition.x = SCREEN_X / 2;
+    ballPosition.y = SCREEN_Y - 100 - 5;
+    ballVelocity.x = 0;
+    ballVelocity.y = -1;
 }

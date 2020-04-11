@@ -9,8 +9,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Work/cppgame/src/Entity.cpp" "C:/Work/cppgame/cmake-build-debug/CMakeFiles/cppgame.dir/src/Entity.cpp.obj"
   "C:/Work/cppgame/src/Global.cpp" "C:/Work/cppgame/cmake-build-debug/CMakeFiles/cppgame.dir/src/Global.cpp.obj"
   "C:/Work/cppgame/src/SceneManager.cpp" "C:/Work/cppgame/cmake-build-debug/CMakeFiles/cppgame.dir/src/SceneManager.cpp.obj"
-  "C:/Work/cppgame/src/scenes/Gameplay.cpp" "C:/Work/cppgame/cmake-build-debug/CMakeFiles/cppgame.dir/src/Scenes/Gameplay.cpp.obj"
-  "C:/Work/cppgame/src/scenes/Menu.cpp" "C:/Work/cppgame/cmake-build-debug/CMakeFiles/cppgame.dir/src/Scenes/Menu.cpp.obj"
+  "C:/Work/cppgame/src/scenes/Gameplay.cpp" "C:/Work/cppgame/cmake-build-debug/CMakeFiles/cppgame.dir/src/scenes/Gameplay.cpp.obj"
+  "C:/Work/cppgame/src/scenes/Menu.cpp" "C:/Work/cppgame/cmake-build-debug/CMakeFiles/cppgame.dir/src/scenes/Menu.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 

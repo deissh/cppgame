@@ -222,7 +222,7 @@ CMakeFiles/cppgame.dir/src/SceneManager.cpp.obj
  C:/Work/cppgame/src/helpers/vec2.h
  C:/Work/cppgame/src/scenes/Gameplay.h
  C:/Work/cppgame/src/scenes/Menu.h
-CMakeFiles/cppgame.dir/src/Scenes/Gameplay.cpp.obj
+CMakeFiles/cppgame.dir/src/scenes/Gameplay.cpp.obj
  ../include/SDL.h
  ../include/SDL_assert.h
  ../include/SDL_atomic.h
@@ -277,7 +277,7 @@ CMakeFiles/cppgame.dir/src/Scenes/Gameplay.cpp.obj
  C:/Work/cppgame/src/scenes/Gameplay.cpp
  C:/Work/cppgame/src/scenes/Gameplay.h
  C:/Work/cppgame/src/scenes/Menu.h
-CMakeFiles/cppgame.dir/src/Scenes/Menu.cpp.obj
+CMakeFiles/cppgame.dir/src/scenes/Menu.cpp.obj
  ../include/SDL.h
  ../include/SDL_assert.h
  ../include/SDL_atomic.h

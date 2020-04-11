@@ -32,7 +32,6 @@ public:
         SDL_Color White = {255, 255, 255};
 
         SDL_Surface* surfaceMessage = TTF_RenderText_Solid(font, sText.data(), White);
-        // FIXME: memory leek x2
         SDL_Texture* Message = SDL_CreateTextureFromSurface(rR, surfaceMessage);
 
         SDL_Rect Message_rect; //create a rect
@@ -42,6 +41,8 @@ public:
         Message_rect.h = H; // controls the height of the rect
 
         SDL_RenderCopy(rR, Message, NULL, &Message_rect);
+        SDL_FreeSurface(surfaceMessage);
+        SDL_DestroyTexture(Message);
     }
 };
 

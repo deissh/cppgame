@@ -23,11 +23,16 @@ public:
         SDL_SetRenderDrawColor(rR, 0, 0, 0, 255);
     }
 
+    static void Line(SDL_Renderer* rR, int x1, int y1, int x2, int y2) {
+        SDL_SetRenderDrawColor(rR, 255, 255, 255, SDL_ALPHA_OPAQUE);
+        SDL_RenderDrawLine(rR, x1, y1, x2, y2);
+    }
+
     static void Text(SDL_Renderer* rR, TTF_Font* font, const std::string& sText, int X, int Y, int W, int H) {
         SDL_Color White = {255, 255, 255};
 
         SDL_Surface* surfaceMessage = TTF_RenderText_Solid(font, sText.data(), White);
-
+        // FIXME: memory leek x2
         SDL_Texture* Message = SDL_CreateTextureFromSurface(rR, surfaceMessage);
 
         SDL_Rect Message_rect; //create a rect

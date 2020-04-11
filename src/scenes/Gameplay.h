@@ -6,6 +6,7 @@
 #define CPPGAME_GAMEPLAY_H
 
 #include "iostream"
+#include "math.h"
 #include "vector"
 #include "SDL.h"
 #include "SDL_ttf.h"
@@ -71,6 +72,7 @@ private:
 
     vec2<int> platformPosition;
     vec2<int> ballPosition;
+    vec2<float> ballVelocity;
 
     void drawBlocks(SDL_Renderer *rR);
 

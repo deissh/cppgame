@@ -18,6 +18,8 @@ Gameplay::Gameplay() {
     // start at platform
     ballPosition.x = SCREEN_X / 2;
     ballPosition.y = SCREEN_Y - 100 - 5;
+    ballVelocity.x = 1;
+    ballVelocity.y = -1;
 }
 
 Gameplay::~Gameplay() {
@@ -28,6 +30,12 @@ Gameplay::~Gameplay() {
 }
 
 void Gameplay::Update(double delta) {
+    ballVelocity.normalize();
+    ballPosition.x += std::round(ballVelocity.x);
+    ballPosition.y += std::round(ballVelocity.y);
+
+    std::cout << "vx: " << ballVelocity.x << " vy: " << ballVelocity.y << "\n";
+    std::cout << "x: " << ballPosition.x << " y: " << ballPosition.y << "\n";
 }
 
 void Gameplay::Draw(SDL_Renderer *rR) {
@@ -46,6 +54,11 @@ void Gameplay::Draw(SDL_Renderer *rR) {
                platformPosition.x, platformPosition.y,
                PLATFORM_SIZE, 25);
     // === ball ===
+    // todo: show/hide gizmo
+    auto norm = ballVelocity.normalize() * 30;
+    Draw::Line(rR,
+            ballPosition.x + BALL_SIZE/2, ballPosition.y + BALL_SIZE/2,
+            ballPosition.x + BALL_SIZE/2 + (int) norm.x, ballPosition.y + BALL_SIZE/2 + (int) norm.y);
     Draw::Rect(rR,
             ballPosition.x, ballPosition.y,
             BALL_SIZE, BALL_SIZE);

@@ -45,8 +45,6 @@ void Core::mainLoop() {
         SDL_PollEvent(mainEvent);
         SDL_RenderClear(rR);
 
-        SDL_RenderFillRect(rR, NULL);
-
         MouseInput();
 
         Update(this->getDelta());

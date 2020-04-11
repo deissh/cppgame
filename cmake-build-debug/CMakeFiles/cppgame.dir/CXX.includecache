@@ -630,6 +630,10 @@ close_code.h
 
 ../include/close_code.h
 
+C:/Work/cppgame/Main.cpp
+src/Core.h
+C:/Work/cppgame/src/Core.h
+
 C:/Work/cppgame/src/Core.cpp
 Core.h
 C:/Work/cppgame/src/Core.h
@@ -646,7 +650,19 @@ C:/Work/cppgame/src/SceneManager.h
 Global.h
 C:/Work/cppgame/src/Global.h
 
+C:/Work/cppgame/src/Global.cpp
+Global.h
 C:/Work/cppgame/src/Global.h
+
+C:/Work/cppgame/src/Global.h
+SceneManager.h
+C:/Work/cppgame/src/SceneManager.h
+
+C:/Work/cppgame/src/SceneManager.cpp
+iostream
+-
+string
+-
 SceneManager.h
 C:/Work/cppgame/src/SceneManager.h
 
@@ -666,9 +682,11 @@ C:/Work/cppgame/src/helpers/SDL_ttf.h
 string
 C:/Work/cppgame/src/helpers/string
 
-C:/Work/cppgame/src/scenes/Gameplay.cpp
-iostream
+C:/Work/cppgame/src/helpers/vec2.h
+cmath
 -
+
+C:/Work/cppgame/src/scenes/Gameplay.cpp
 Gameplay.h
 C:/Work/cppgame/src/scenes/Gameplay.h
 string
@@ -677,10 +695,16 @@ C:/Work/cppgame/src/scenes/string
 C:/Work/cppgame/src/helpers/Draw.h
 
 C:/Work/cppgame/src/scenes/Gameplay.h
+iostream
+C:/Work/cppgame/src/scenes/iostream
+vector
+C:/Work/cppgame/src/scenes/vector
 SDL.h
 C:/Work/cppgame/src/scenes/SDL.h
 SDL_ttf.h
 C:/Work/cppgame/src/scenes/SDL_ttf.h
+../helpers/vec2.h
+C:/Work/cppgame/src/helpers/vec2.h
 
 C:/Work/cppgame/src/scenes/Menu.cpp
 Menu.h

@@ -53,6 +53,7 @@ CMakeFiles/cppgame.dir/Main.cpp.obj
  C:/Work/cppgame/src/Core.h
  C:/Work/cppgame/src/Global.h
  C:/Work/cppgame/src/SceneManager.h
+ C:/Work/cppgame/src/helpers/vec2.h
  C:/Work/cppgame/src/scenes/Gameplay.h
  C:/Work/cppgame/src/scenes/Menu.h
 CMakeFiles/cppgame.dir/src/Core.cpp.obj
@@ -107,6 +108,7 @@ CMakeFiles/cppgame.dir/src/Core.cpp.obj
  C:/Work/cppgame/src/Core.h
  C:/Work/cppgame/src/Global.h
  C:/Work/cppgame/src/SceneManager.h
+ C:/Work/cppgame/src/helpers/vec2.h
  C:/Work/cppgame/src/scenes/Gameplay.h
  C:/Work/cppgame/src/scenes/Menu.h
 CMakeFiles/cppgame.dir/src/Entity.cpp.obj
@@ -164,8 +166,9 @@ CMakeFiles/cppgame.dir/src/Global.cpp.obj
  C:/Work/cppgame/src/Global.cpp
  C:/Work/cppgame/src/Global.h
  C:/Work/cppgame/src/SceneManager.h
- C:/Work/cppgame/src/Scenes/Gameplay.h
- C:/Work/cppgame/src/Scenes/Menu.h
+ C:/Work/cppgame/src/helpers/vec2.h
+ C:/Work/cppgame/src/scenes/Gameplay.h
+ C:/Work/cppgame/src/scenes/Menu.h
 CMakeFiles/cppgame.dir/src/SceneManager.cpp.obj
  ../include/SDL.h
  ../include/SDL_assert.h
@@ -216,8 +219,9 @@ CMakeFiles/cppgame.dir/src/SceneManager.cpp.obj
  ../include/close_code.h
  C:/Work/cppgame/src/SceneManager.cpp
  C:/Work/cppgame/src/SceneManager.h
- C:/Work/cppgame/src/Scenes/Gameplay.h
- C:/Work/cppgame/src/Scenes/Menu.h
+ C:/Work/cppgame/src/helpers/vec2.h
+ C:/Work/cppgame/src/scenes/Gameplay.h
+ C:/Work/cppgame/src/scenes/Menu.h
 CMakeFiles/cppgame.dir/src/Scenes/Gameplay.cpp.obj
  ../include/SDL.h
  ../include/SDL_assert.h
@@ -267,6 +271,7 @@ CMakeFiles/cppgame.dir/src/Scenes/Gameplay.cpp.obj
  ../include/begin_code.h
  ../include/close_code.h
  C:/Work/cppgame/src/helpers/Draw.h
+ C:/Work/cppgame/src/helpers/vec2.h
  C:/Work/cppgame/src/scenes/Gameplay.cpp
  C:/Work/cppgame/src/scenes/Gameplay.h
 CMakeFiles/cppgame.dir/src/Scenes/Menu.cpp.obj
@@ -321,6 +326,7 @@ CMakeFiles/cppgame.dir/src/Scenes/Menu.cpp.obj
  C:/Work/cppgame/src/Global.h
  C:/Work/cppgame/src/SceneManager.h
  C:/Work/cppgame/src/helpers/Draw.h
+ C:/Work/cppgame/src/helpers/vec2.h
  C:/Work/cppgame/src/scenes/Gameplay.h
  C:/Work/cppgame/src/scenes/Menu.cpp
  C:/Work/cppgame/src/scenes/Menu.h

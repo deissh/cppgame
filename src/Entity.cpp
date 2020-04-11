@@ -3,3 +3,8 @@
 //
 
 #include "Entity.h"
+
+bool Entity::collisionWith(Entity entity) {
+    throw "Not Impl";
+    return false;
+}

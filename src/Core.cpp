@@ -93,12 +93,12 @@ void Core::MouseInput() {
                     break;
             }
 
-            this->SceneManager.LeftMousePressedEvent(mouseX, mouseY);
+            Global::getSM()->LeftMousePressedEvent(mouseX, mouseY);
             break;
         }
         case SDL_MOUSEMOTION: {
             SDL_GetMouseState(&mouseX, &mouseY);
-            this->SceneManager.MouseMove(mouseX, mouseY);
+            Global::getSM()->MouseMove(mouseX, mouseY);
             break;
         }
         case SDL_MOUSEBUTTONUP: {

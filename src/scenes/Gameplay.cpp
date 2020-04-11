@@ -2,7 +2,6 @@
 // Created by Кирилл on 09.04.2020.
 //
 
-#include <iostream>
 #include "Gameplay.h"
 #include "string"
 #include "../helpers/Draw.h"
@@ -12,6 +11,13 @@ Gameplay::Gameplay() {
 
     this->font = TTF_OpenFont("Pixeboy-z8XGD.ttf", 70);
     if (!this->font) std::cerr << "Could not load font " << TTF_GetError() << std::endl;
+
+    platformPosition.x = SCREEN_X / 2 - PLATFORM_SIZE / 2;
+    platformPosition.y = SCREEN_Y - 50;
+
+    // start at platform
+    ballPosition.x = SCREEN_X / 2;
+    ballPosition.y = SCREEN_Y - 100 - 5;
 }
 
 Gameplay::~Gameplay() {
@@ -25,22 +31,40 @@ void Gameplay::Update(double delta) {
 }
 
 void Gameplay::Draw(SDL_Renderer *rR) {
+    // === GUI ===
     Draw::Text(rR, this->font, "Scores: " + std::to_string(this->state.getScore()),
             5, 5,
             100, 25);
 
     Draw::Rect(rR,
-            5, 35,
-            800 - 10, 800 - 10);
-
-    // platform
+               5, 35,
+               SCREEN_X - 10, SCREEN_Y - 10);
+    // === blocks ===
+    this->drawBlocks(rR);
+    // === platform ===
     Draw::Rect(rR,
-                     100, 800 - 50,
-                     150, 25);
+               platformPosition.x, platformPosition.y,
+               PLATFORM_SIZE, 25);
+    // === ball ===
+    Draw::Rect(rR,
+            ballPosition.x, ballPosition.y,
+            BALL_SIZE, BALL_SIZE);
 }
 
-void Gameplay::LeftMousePressedEvent(int mouseX, int mouseY) {
+void Gameplay::LeftMousePressedEvent(int x, int y) {
 }
 
-void Gameplay::MouseMove(int mouseX, int mouseY) {
+void Gameplay::MouseMove(int x, int y) {
+    // платформа двигается за мышкой
+    if (5 + PLATFORM_SIZE / 2 < x && x < SCREEN_Y - 5 - PLATFORM_SIZE / 2)
+        this->platformPosition.x = x - PLATFORM_SIZE / 2;
+}
+
+void Gameplay::drawBlocks(SDL_Renderer *rR) {
+    for (auto & brick : this->state.getGrid()) {
+        if (brick.active == false) continue;
+        Draw::Rect(rR,
+                   brick.position.x, brick.position.y,
+                   brick.position.w, brick.position.h);
+    }
 }

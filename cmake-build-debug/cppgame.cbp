@@ -113,6 +113,9 @@
 		<Unit filename="C:/Work/cppgame/src/SceneManager.h">
 			<Option target="cppgame"/>
 		</Unit>
+		<Unit filename="C:/Work/cppgame/src/components/Ball.h">
+			<Option target="cppgame"/>
+		</Unit>
 		<Unit filename="C:/Work/cppgame/src/helpers/Draw.h">
 			<Option target="cppgame"/>
 		</Unit>

@@ -14,6 +14,8 @@ SceneManager::SceneManager() {
 }
 
 SceneManager::~SceneManager() {
+    delete this->menuScene;
+    delete this->gameplay;
 }
 
 void SceneManager::Update(double delta) {

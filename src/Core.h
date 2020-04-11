@@ -18,8 +18,6 @@ private:
     SDL_Renderer* rR;
     SDL_Event* mainEvent;
 
-    SceneManager SceneManager;
-
     // fps metrics
     long frameTime = 0;
 

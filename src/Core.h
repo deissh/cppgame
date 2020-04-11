@@ -22,7 +22,6 @@ private:
 
     // fps metrics
     long frameTime = 0;
-    static const int MIN_FRAME_TIME = 16;
 
     unsigned long lFPSTime;
     int iNumOfFPS;

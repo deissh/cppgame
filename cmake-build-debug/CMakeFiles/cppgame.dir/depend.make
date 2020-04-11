@@ -52,8 +52,8 @@ CMakeFiles\cppgame.dir\Main.cpp.obj: ..\Main.cpp
 CMakeFiles\cppgame.dir\Main.cpp.obj: ..\src\Core.h
 CMakeFiles\cppgame.dir\Main.cpp.obj: ..\src\Global.h
 CMakeFiles\cppgame.dir\Main.cpp.obj: ..\src\SceneManager.h
-CMakeFiles\cppgame.dir\Main.cpp.obj: ..\src\Scenes\Gameplay.h
-CMakeFiles\cppgame.dir\Main.cpp.obj: ..\src\Scenes\Menu.h
+CMakeFiles\cppgame.dir\Main.cpp.obj: ..\src\scenes\Gameplay.h
+CMakeFiles\cppgame.dir\Main.cpp.obj: ..\src\scenes\Menu.h
 
 CMakeFiles\cppgame.dir\src\Core.cpp.obj: ..\include\SDL.h
 CMakeFiles\cppgame.dir\src\Core.cpp.obj: ..\include\SDL_assert.h
@@ -106,8 +106,8 @@ CMakeFiles\cppgame.dir\src\Core.cpp.obj: ..\src\Core.cpp
 CMakeFiles\cppgame.dir\src\Core.cpp.obj: ..\src\Core.h
 CMakeFiles\cppgame.dir\src\Core.cpp.obj: ..\src\Global.h
 CMakeFiles\cppgame.dir\src\Core.cpp.obj: ..\src\SceneManager.h
-CMakeFiles\cppgame.dir\src\Core.cpp.obj: ..\src\Scenes\Gameplay.h
-CMakeFiles\cppgame.dir\src\Core.cpp.obj: ..\src\Scenes\Menu.h
+CMakeFiles\cppgame.dir\src\Core.cpp.obj: ..\src\scenes\Gameplay.h
+CMakeFiles\cppgame.dir\src\Core.cpp.obj: ..\src\scenes\Menu.h
 
 CMakeFiles\cppgame.dir\src\Entity.cpp.obj: ..\src\Entity.cpp
 CMakeFiles\cppgame.dir\src\Entity.cpp.obj: ..\src\Entity.h

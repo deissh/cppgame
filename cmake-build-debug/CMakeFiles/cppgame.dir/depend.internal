@@ -53,8 +53,8 @@ CMakeFiles/cppgame.dir/Main.cpp.obj
  C:/Work/cppgame/src/Core.h
  C:/Work/cppgame/src/Global.h
  C:/Work/cppgame/src/SceneManager.h
- C:/Work/cppgame/src/Scenes/Gameplay.h
- C:/Work/cppgame/src/Scenes/Menu.h
+ C:/Work/cppgame/src/scenes/Gameplay.h
+ C:/Work/cppgame/src/scenes/Menu.h
 CMakeFiles/cppgame.dir/src/Core.cpp.obj
  ../include/SDL.h
  ../include/SDL_assert.h
@@ -107,8 +107,8 @@ CMakeFiles/cppgame.dir/src/Core.cpp.obj
  C:/Work/cppgame/src/Core.h
  C:/Work/cppgame/src/Global.h
  C:/Work/cppgame/src/SceneManager.h
- C:/Work/cppgame/src/Scenes/Gameplay.h
- C:/Work/cppgame/src/Scenes/Menu.h
+ C:/Work/cppgame/src/scenes/Gameplay.h
+ C:/Work/cppgame/src/scenes/Menu.h
 CMakeFiles/cppgame.dir/src/Entity.cpp.obj
  C:/Work/cppgame/src/Entity.cpp
  C:/Work/cppgame/src/Entity.h

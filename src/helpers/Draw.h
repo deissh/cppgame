@@ -21,7 +21,6 @@ public:
         SDL_SetRenderDrawColor(rR, 255, 255, 255, 255);
         SDL_RenderDrawRect(rR, &rect);
         SDL_SetRenderDrawColor(rR, 0, 0, 0, 255);
-        SDL_RenderPresent(rR);
     }
 
     static void Text(SDL_Renderer* rR, TTF_Font* font, const std::string& sText, int X, int Y, int W, int H) {

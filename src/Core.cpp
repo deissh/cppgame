@@ -21,7 +21,7 @@ Core::Core() {
             SDL_WINDOWPOS_CENTERED,
             800,
             800,
-            SDL_WINDOW_SHOWN
+            SDL_WINDOW_SHOWN | SDL_WINDOW_OPENGL
     );
 
     if(window == NULL)
@@ -61,10 +61,6 @@ void Core::mainLoop() {
         ++iFPS;
 
         SDL_RenderPresent(rR);
-
-        if(SDL_GetTicks() - frameTime < MIN_FRAME_TIME) {
-            SDL_Delay(MIN_FRAME_TIME - (SDL_GetTicks () - frameTime));
-        }
     }
 }
 
@@ -82,7 +78,7 @@ auto LAST = 0;
 double Core::getDelta() {
     LAST = NOW;
     NOW = SDL_GetPerformanceCounter();
-    return (double)((NOW - LAST)*1000 / (double)SDL_GetPerformanceFrequency() );
+    return (double)((NOW - LAST) * 1000 / (double)SDL_GetPerformanceFrequency());
 }
 
 void Core::MouseInput() {

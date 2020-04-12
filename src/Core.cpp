@@ -6,7 +6,7 @@
 
 #include "Core.h"
 
-const std::string GAME_TITLE = "Arcanoid 2000";
+const std::string GAME_TITLE = "Arcanoid 9000";
 
 Core::Core() {
     this->iFPS = 0;
@@ -50,7 +50,10 @@ void Core::mainLoop() {
         Update(this->getDelta());
         Draw();
 
-        SDL_SetWindowTitle(this->window, (GAME_TITLE + " | fps: " + std::to_string(iNumOfFPS)).data());
+        SDL_SetWindowTitle(
+            this->window,
+            (GAME_TITLE + " | fps: " + std::to_string(iNumOfFPS)).data()
+        );
         if(SDL_GetTicks() - 1000 >= lFPSTime) {
             lFPSTime = SDL_GetTicks();
             iNumOfFPS = iFPS;

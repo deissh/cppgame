@@ -5,8 +5,8 @@
 #ifndef CPPGAME_GAMEPLAY_H
 #define CPPGAME_GAMEPLAY_H
 
-#include "iostream"
-#include "math.h"
+#include <iostream>
+#include <cmath>
 #include "vector"
 #include "SDL.h"
 #include "SDL_ttf.h"
@@ -21,8 +21,8 @@
 
 #define GRID_MIN_H 100
 #define BLOCK_W 20
-#define BOARD_W_COUNT 10
-#define BOARD_H_COUNT 20
+#define BOARD_W_COUNT 5
+#define BOARD_H_COUNT 5
 
 class Brick {
 public:

@@ -24,7 +24,7 @@ Gameplay::~Gameplay() {
 }
 
 void Gameplay::Update(double delta) {
-    if (ballPosition.y >= SCREEN_Y) {
+    if (ballPosition.y >= SCREEN_Y || state.getScore() == state.bricks.size()) {
         // switch active scene
         Global::getSM()->scene = Global::getSM()->sMainMenu;
         // reset all stats
@@ -36,9 +36,8 @@ void Gameplay::Update(double delta) {
 
     checkCollision();
 
-    ballVelocity.normalize();
-    ballPosition.x += std::round(ballVelocity.x) * 2;
-    ballPosition.y += std::round(ballVelocity.y) * 2;
+    ballPosition.x += std::round(ballVelocity.x) * 5;
+    ballPosition.y += std::round(ballVelocity.y) * 5;
 }
 
 void Gameplay::Draw(SDL_Renderer *rR) {
@@ -58,10 +57,10 @@ void Gameplay::Draw(SDL_Renderer *rR) {
                platform.w, platform.h);
     // === ball ===
     // todo: show/hide gizmo
-    auto norm = ballVelocity.normalize() * 30;
-    Draw::Line(rR,
-            ballPosition.x + BALL_SIZE/2, ballPosition.y + BALL_SIZE/2,
-            ballPosition.x + BALL_SIZE/2 + (int) norm.x, ballPosition.y + BALL_SIZE/2 + (int) norm.y);
+//    auto norm = ballVelocity * 30;
+//    Draw::Line(rR,
+//            ballPosition.x + BALL_SIZE/2, ballPosition.y + BALL_SIZE/2,
+//            ballPosition.x + BALL_SIZE/2 + (int) norm.x, ballPosition.y + BALL_SIZE/2 + (int) norm.y);
     Draw::Rect(rR,
             ballPosition.x, ballPosition.y,
             BALL_SIZE, BALL_SIZE);
@@ -94,14 +93,15 @@ bool Gameplay::in_collision(struct SDL_Rect r2) {
 }
 
 void Gameplay::checkCollision() {
-    if (in_collision(platform))
-        ballVelocity.y = -1;
+    if (ballPosition.x > SCREEN_X - 5 - BALL_SIZE || ballPosition.x <= 5) ballVelocity.x *= -1;
+    if (ballPosition.y < 35 ) ballVelocity.y *= -1;
+    if (in_collision(platform)) ballVelocity.y = -1;
 
     for (auto i = 0; i < BOARD_W_COUNT; i++) for (auto j = 0; j < BOARD_H_COUNT; j++) {
         auto idx = j + BOARD_H_COUNT * i;
         if (!state.bricks[idx].active) continue;
         if (in_collision(state.bricks[idx].position)) {
-            ballVelocity.y = 1;
+            ballVelocity.y *= -1;
             state.bricks[idx].active = false;
             state.addScore(1);
         }
@@ -117,6 +117,6 @@ void Gameplay::reset() {
     // start at platform
     ballPosition.x = SCREEN_X / 2;
     ballPosition.y = SCREEN_Y - 100 - 5;
-    ballVelocity.x = 0;
+    ballVelocity.x = 0.5;
     ballVelocity.y = -1;
 }
